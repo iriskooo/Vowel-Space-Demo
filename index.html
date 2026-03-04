@@ -1,14 +1,128 @@
 <!DOCTYPE html>
-<html>
+<html lang="zh-Hant">
+
 <head>
-  <title>My Demo Page</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>System Demo</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 2rem;
+            max-width: 900px;
+        }
+
+        .section {
+            margin-top: 40px;
+            border-bottom: 1px solid #ccc;
+            padding-bottom: 30px;
+        }
+
+        .section h2 {
+            margin-bottom: 10px;
+        }
+
+        audio {
+            display: block;
+            margin: 5px 0;
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+            margin-top: 10px;
+        }
+    </style>
 </head>
+
 <body>
-  <h1>系統 Demo</h1>
-  <p>這裡放你的系統說明 / Demo video / 可播放內容。</p>
-  <!-- 示例音訊 -->
-  <audio controls>
-    <source src="your_audio_example.wav" type="audio/wav">
-  </audio>
+    <div class="section">
+        <h1>M09 (High)</h1>
+
+        <strong>Source (Healthy):</strong>
+        <audio controls src="M09\CM09_B2_UW85_M6.wav"></audio>
+
+        <strong>Reference (Pathological):</strong>
+        <audio controls src="M09\M09_B2_UW86_M3.wav"></audio>
+
+        <strong>Synthesized:</strong>
+        <audio controls src="M09\CM09_B2_UW85_M7_to_M09_B2_UW86_M4.wav"></audio>
+
+        <strong>Ground-truth:</strong>
+        <audio controls src="M09\M09_B2_UW85_M5.wav"></audio>
+
+        <strong>Synthesized Spectrogram:</strong><br>
+        <img src="M09\M09_syn.png" alt="Example1 Synthesized Spectrogram">
+
+        <strong>Ground-truth Spectrogram:</strong><br>
+        <img src="M09\M09_GT.png" alt="Example1 Ground-truth Spectrogram">
+    </div>
+
+    <div class="section">
+        <h1>F04 (Medium)</h1>
+
+        <strong>Source (Healthy):</strong>
+        <audio controls src="F04\CF04_B2_UW65_M5.wav"></audio>
+
+        <strong>Reference (Pathological):</strong>
+        <audio controls src="F04\F04_B2_UW66_M3.wav"></audio>
+
+        <strong>Synthesized:</strong>
+        <audio controls src="F04\CF04_B2_UW65_M3_to_F04_B2_UW66_M8.wav"></audio>
+
+        <strong>Ground-truth:</strong>
+        <audio controls src="F04\F04_B2_UW65_M3.wav"></audio>
+
+        <strong>Synthesized Spectrogram:</strong><br>
+        <img src="F04/F04_syn.png" alt="Example1 Synthesized Spectrogram">
+
+        <strong>Ground-truth Spectrogram:</strong><br>
+        <img src="F04/F04_GT.png" alt="Example1 Ground-truth Spectrogram">
+    </div>
+
+    <div class="section">
+        <h1>F02 (Low)</h1>
+
+        <strong>Source (Healthy):</strong>
+        <audio controls src="F02/CF02_B2_UW80_M2.wav"></audio>
+
+        <strong>Reference (Pathological):</strong>
+        <audio controls src="F02/F02_B2_UW81_M2.wav"></audio>
+
+        <strong>Synthesized:</strong>
+        <audio controls src="F02/CF02_B2_UW80_M5_to_F02_B2_UW81_M8.wav"></audio>
+
+        <strong>Ground-truth:</strong>
+        <audio controls src="F02/F02_B2_UW80_M4.wav"></audio>
+
+        <strong>Synthesized Spectrogram:</strong><br>
+        <img src="F02\F02_syn.png" alt="Example1 Synthesized Spectrogram">
+
+        <strong>Ground-truth Spectrogram:</strong><br>
+        <img src="F02\F02_GT.png" alt="Example1 Ground-truth Spectrogram">
+    </div>
+
+    <div class="section">
+        <h1>M01 (Very Low)</h1>
+
+        <strong>Source (Healthy):</strong>
+        <audio controls src="M01\CM10_B2_UW45_M6.wav"></audio>
+
+        <strong>Reference (Pathological):</strong>
+        <audio controls src="M01\M01_B2_UW46_M5.wav"></audio>
+
+        <strong>Synthesized:</strong>
+        <audio controls src="M01\CM10_B2_UW45_M6_to_M01_B2_UW46_M5.wav"></audio>
+
+        <strong>Ground-truth:</strong>
+        <audio controls src="M01\M01_B2_UW45_M6.wav"></audio>
+
+        <strong>Synthesized Spectrogram:</strong><br>
+        <img src="M01\M01_syn.png" alt="Example1 Synthesized Spectrogram">
+
+        <strong>Ground-truth Spectrogram:</strong><br>
+        <img src="M01\M01_GT.png" alt="Example1 Ground-truth Spectrogram">
+    </div>
 </body>
+
 </html>
